@@ -1,0 +1,670 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* home-section */
+.home-section{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg,black 70%,#ff9900 30%);
+}
+/* navbar */
+#navbar{
+    background: linear-gradient(90deg,white 70%,#ff9900 30%);
+}
+#logo{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff9900;
+    letter-spacing: 2px;
+}
+.navbar-nav{
+    margin-left: 50px;
+    margin-top: 6px;
+}
+.nav-item .nav-link{
+    margin-left: 4px;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    text-shadow: 1px 1px 1px lightslategray;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+}
+.nav-item .nav-link{
+    color: #ff9900;
+}
+#btncv{
+    background: transparent;
+    border: 2px solid black;
+    font-weight: bold; 
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media  screen and (max-width:991px){
+    #btncv{
+        border: 2px solid #ff9900;
+        color: #ff9900;
+        margin-left: 20px;
+    }
+}
+    
+
+/* navbar */
+
+
+/* home-content */
+
+.home{
+    width: 100%;
+    height: 91.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+}
+.home .img{
+    flex: 1 1 400px;
+
+}
+.home .img img{
+    width: 50%;
+    margin-left: 70px;
+}
+.home .content{
+    flex: 1 1 400px;
+    margin-left: 45px;
+}
+.home .content h5{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.home .content h3{
+    font-size: 50px;
+    color: white;
+}
+.home .content h3 span{
+    color: #ff9900;
+    font-weight: bold;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 40px;
+    animation: changetext 20s infinite linear;
+}
+@keyframes  changetext{
+    0%{content: "AGRICULTURE SERVICES";}
+    10%{content: "HARDWARE ROBOTICS MODULE";}
+    20%{content: "M.TECH/PHD THESIS SUPPORT";}
+    30%{content: "MAJOR/MINOR PROJECT SUPPORTS";}
+    40%{content: "SOFTWARE SERVICES";}
+    50%{content: "PRODUCT";}
+    60%{content: "ROBOT ARM MODULE";}
+    70%{content: "LCD MODULE";}
+    80%{content: "STEPPER MOTER MODULE";}
+}
+.home .content p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#btn1{
+    width: 150px;
+    height: 30px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    color: #ff9900;
+    border: 2px solid #ff9900;
+    background: transparent;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btn1:hover{
+    background-color: #ff9900;
+    color: black;
+}
+@media screen and(max-width:844px){
+.home-section{
+    height: 146vh;
+    background: black;
+}
+.home .content{
+    margin-top: 50px;
+}
+#navbar{
+    background: black;
+}
+@media screen and(max-width:650px){
+    .home-section{
+        height: 130vh;
+    }
+    .img img{
+        margin-top: 30px;
+    }
+}
+    @media screen and(max-width:360px){
+        .home-section{
+            height: 110vh;
+        }
+    
+} 
+    
+}
+    
+
+
+/* home-content */
+/* home-section */
+
+
+
+
+
+/* about */
+#about{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#about .card img{
+    background-color: #ff9900;
+    border: 2px solid black;
+    width: 100%;
+    margin-left: -0px;
+}
+#about h3{
+    color: white;
+    /* font-weight: bold; */
+    border-bottom: 2px solid #ff9900;
+    width: 150px;
+}
+#about h5{
+    color: white;
+    font-weight: bold;
+
+}
+#about p{
+    color: white;
+    font-size: 15px;
+
+}
+#about h2{
+    color: white;
+    font-size: 17px;
+}
+#about h2 span{
+    font-size: 15px;
+    color: #ff9900;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#btncv2{
+    width: 160px;
+    height: 38px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border: none;
+    color: black;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#btncv2:hover{
+    background-color: #ff9900;
+}
+@media screen and (max-width:987px){
+    #about p{
+        font-size: 10px;
+    }
+    
+}
+@media screen and (max-width:767px){
+    #about{
+        height: 150vh;
+    }
+    #about p{
+        font-size: 17px;
+
+    }
+    
+}
+@media screen and (max-width:500px){
+    #about{
+        height: 120vh;
+    }
+}
+/* about */
+
+
+
+
+/* services */
+#services{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    flex-direction: column;
+    
+    
+}
+#services h3{
+    width: 130px;
+    padding-top: 130px;
+    color: white;
+    border-bottom: 2px solid #ff9900;
+    
+}
+#services .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+    
+}
+#services .card:hover{
+    background-color: #ff9900;
+    
+}
+#services p{
+    color: white;
+}
+#services .card i{
+    font-size: 42px;
+    margin-left: 10px;
+
+}
+#services .card h2{
+    font-size: 22px;
+    margin-left: 10px;
+}
+@media screen and (max-width:767px) {
+    #services{
+        height: 200vh;
+    }
+}  
+
+
+
+
+
+/* services */
+.hr{
+    
+    width: 100%;
+    height: 1px;
+    background-color: #ff9900;
+}
+
+
+
+
+/* Resume */
+#resume{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+#resume h4{
+    color: #ff9900;
+    padding-top: 50px;
+}
+#resume h2{
+    color: white;
+}
+#resume h3{
+    color: #ff9900;
+}
+#resume h3{
+    color:white;
+    border-bottom: 2px solid #ff9900;
+    width: 170px;
+    margin-top: 30px;
+}
+#resume h2{
+    color: white;
+    margin-top: 20px;
+    font-size: 26px;
+}
+#resume p{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#resume i{
+    color: #ff9900;
+}
+@media screen and (max-width:767px){
+    #resume{
+        height: 150vh;
+    }
+}
+
+/* Resume */
+
+/* Awards */
+#Awards{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#Awards .card img{
+    background-color: #ff9900;
+    border: 2px solid black;
+}
+#Awards h2{
+    color: white;
+    font-weight: bold; 
+    border-bottom: 2px solid #ff9900;
+    width: 150px;
+}
+#Awards h4{
+    color: white;
+    font-size: 20px;
+}
+/* Awards */
+
+/* Traning*/
+#Trainings{
+    width: 100%;
+    height: 100vh;
+    
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+#Trainings .card img{
+    background-color: #ff9900;
+    border: 2px solid black;
+    
+}
+#Trainings h2{
+    color: white;
+    font-weight: bold; 
+    border-bottom: 2px solid #ff9900;
+    width: 150px;
+}
+#Trainings h3{
+    color: white;
+    font-size: 20px;
+}
+.tools-gallery{
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.item {
+    width: 20%;
+    margin: 5px;
+    background-color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    background: #262626;
+    color: #f2f2f2b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 7px 8px 5px 0px rgba(255,0,79,0.26);
+    -webkit-box-shadow: 7px 8px 5px 0px rgba(255,0,79,0.26);
+    -moz-box-shadow: 7px 8px 5px 0px rgba(255,0,79,0.26);
+}
+/* Traning*/
+
+
+
+/* portfolio */
+#portfolio{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+
+}
+#portfolio h3{
+    color: white;
+    padding-top: 15px;
+    color: white;
+    font-weight: bold; 
+    border-bottom: 2px solid #ff9900;
+    width: 150px;
+    align-items: center;
+}
+#portfolio p{
+    color:white;
+}
+
+    .portfolio-image {
+        height: 100px; /* Set the desired height for the images */
+        width: 50%;
+        margin-left: 50px;
+        object-fit: cover; /* Ensure the images cover the entire container without stretching */
+    }
+
+
+#portfolio .card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#portfolio .card:hover{
+    transform: translateY(-10px);
+}
+@media screen and (max-width:770px){
+    #portfolio{
+        height: 320vh;
+    }
+    @media screen and (max-width:460px){
+        #portfolio{
+            height: 270vh;
+            
+        }
+    
+}
+@media screen and (max-width:380px){
+    #portfolio{
+        height: 235vh;
+    }
+
+}
+@media screen and (max-width:312px){
+    #portfolio{
+        height: 200vh;
+    }
+
+}
+@media screen and (max-width:300px){
+    #portfolio{
+        height: 190vh;
+    }
+
+}
+@media screen and (max-width:280px){
+    #portfolio h1{
+        padding-top: 100px;
+    }
+}
+}
+/* portfolio */
+
+
+
+
+/* contact */
+#submit-button:focus {
+    background-color: black;  
+    color: #ff9900; 
+    border: 2px solid #ff9900; 
+    outline: none; 
+}
+#contact{
+    width: 100%;
+    height: 100vh;
+   background-color: black;
+}
+#contact h1{
+    color: white;
+    border-bottom: 2px solid #ff9900;
+    width: 210px;
+    padding-top: 100px;
+}
+#contact p{
+    color: white;
+}
+#contact input{
+    width: 420px;
+    margin-top: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #ff9900;
+    color: white;
+}
+#contact ::placeholder{
+    color: white;
+}
+#contact textarea{
+    background: transparent;
+    border: 2px solid #ff9900;
+    margin-top: 20px;
+    color: white;
+    
+}
+#button{
+    width: 420px;
+    height: 38px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background: transparent;
+    color: #ff9900;
+    border: 2px solid #ff9900;
+    margin-top: 30px;
+    
+}
+#contact i{
+    color: #ff9900;
+    margin-top: 30px;
+    margin-left: 7px;
+    font-size: 20px;
+}
+.socail-links i{
+    padding-top: 20px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+@media screen and(max-width:995px){
+    #contact input{
+        width: 350px;
+    }
+    #contact textarea{
+        width: 350px;
+    }
+    #contact #btncontact{
+        width: 350px;
+    }
+  
+    
+}
+@media screen and(max-width:476px){
+    #contact input{
+        width: 250px;
+    }
+    #contact textarea{
+        width: 250px;
+    }
+    #contact #btncontact{
+        width: 250px;
+    }
+  
+    
+}
+@media screen and (max-width:320px){
+    #contact input{
+        width: 180px;
+    }
+    #contact textarea{
+        width: 180px;
+    }
+    #contact #btncontact{
+        width: 180px;
+    }
+  
+    
+}
+@media screen and (max-width:767px){
+    #contact{
+        height: 150vh;
+    }
+    
+} 
+    
+
+
+/* contact */
+
+
+
+/* footer */
+#footer{
+    width: 100%;
+    background-color: #ff9900;
+}
+#footer h1{
+    color: white;
+    text-shadow: 0px 1px black;
+    padding-top: 30px;
+}
+#footer p{
+    color: white;
+    text-shadow: 0px 0px 1px;
+}
+.icons i{
+    text-shadow: 1px 1px 1px black;
+    font-size: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.copyright{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 1px black;
+
+}
+.credite{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+/* footer */
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+.arrow{
+    position: fixed;
+    border-radius: 50px;
+    color: white;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px black;
+    text-align: center;
+    line-height: 50px;
+}
+.arrow:hover{
+    color:white;
+}
